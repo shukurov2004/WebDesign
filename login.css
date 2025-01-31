@@ -1,0 +1,218 @@
+ @keyframes fade-in {
+     0% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     animation: fade-in 3s;
+ }
+
+ .logo {
+     font-family: 'Courier New', Courier, monospace;
+     padding: 30px 0 0 30px;
+     font-size: 30px;
+    font-weight: bold;
+ }
+ .logo span{
+    color: rgb(255, 106, 0);
+ }
+
+
+ .login {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ h1 {
+     text-align: center;
+     padding-bottom: 40px;
+     font-size: 50px;
+     color: rgb(255, 106, 0);
+ }
+
+ form {
+     padding-top: 50px;
+ }
+
+ form input {
+     outline-color: aqua;
+     border-radius: 20px;
+     border: 2px solid rgb(255, 106, 0);
+     font-size: 17px;
+     letter-spacing: 2px;
+     padding-left: 10px;
+     margin-bottom: 20px;
+     width: 500px;
+     height: 40px;
+     transition: all 0.5s ease;
+ }
+
+ form input:hover {
+     border: 2px solid aqua;
+ }
+
+
+
+ form i {
+     font-size: 20px;
+     color: rgb(255, 106, 0);
+ }
+
+ form p {
+     font-size: 17px;
+     letter-spacing: 2px;
+ }
+
+ form a {
+     text-decoration: none;
+     color: rgb(255, 106, 0);
+     transition: all 0.5s ease;
+     font-weight: 600;
+     font-size: 20px;
+ }
+
+ form a:hover {
+     color: aqua;
+     text-decoration: underline;
+ }
+
+
+ .btn {
+     border: 2px solid aqua;
+     border-radius: 20px;
+     background-color: white;
+     text-align: center;
+     font-weight: 600;
+     font-size: 20px;
+     width: 500px;
+     height: 40px;
+     margin-top: 20px;
+     padding-left: 20px;
+     transition: all 0.5s ease;
+ }
+
+ .btn:hover {
+     background-color: rgb(255, 106, 0);
+     border: 1px solid rgb(255, 106, 0);
+ }
+
+ .btn a {
+     text-decoration: none;
+     color: black;
+     letter-spacing: 2px;
+ }
+
+ .btn a:hover {
+     text-decoration: none;
+     font-size: 20px;
+     color: black;
+ }
+
+ form .social-icons {
+     padding-top: 40px;
+     text-align: center;
+ }
+
+ form .social-icons i {
+     font-size: 30px;
+     letter-spacing: 10px;
+     transition: all 0.5s ease;
+ }
+
+ form .social-icons i:hover {
+     color: aqua;
+ }
+
+ .login_photo img {
+     border: 3px solid aqua;
+     width: 550px;
+     border-radius: 50%;
+     transition: all 0.5s ease;
+
+ }
+
+ .login_photo img:hover {
+     transform: scale(1.1);
+ }
+
+
+ /*RESPONSIVE*/
+
+ @media (max-width: 1300px) {
+
+     /* Adjust layout for medium screens */
+     .login {
+         flex-direction: row;
+         justify-content: center;
+         gap: 50px;
+     }
+
+     form input {
+         width: 400px;
+     }
+
+     .btn {
+         width: 400px;
+     }
+
+     .login_photo img {
+         width: 400px;
+     }
+ }
+
+ @media (max-width: 900px) {
+     .login {
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+     }
+
+     form input {
+         width: 450px;
+     }
+
+     .btn {
+         width: 100%;
+     }
+
+     .login_photo img {
+         display: none;
+     }
+ }
+
+
+ @media (max-width: 564px) {
+
+     /* Adjust layout for small screens */
+     .logo {
+       display: none;
+     }
+
+     .input-box i {
+         display: none;
+     }
+
+     form input {
+         width: 100%;
+     }
+
+     .btn {
+         width: 100%;
+     }
+
+     .login_photo img {
+         display: none;
+     }
+ }

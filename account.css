@@ -1,0 +1,162 @@
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-height: 100vh;
+  background-color: #fff;
+  background-size: cover;
+  background-position: 50% 50%;
+  animation: fade-in 3s;
+}
+
+.account-login {
+  width: 470px;
+  color: black;
+}
+
+.account-login h1 {
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  color: rgb(255, 106, 0);
+}
+
+.account-login .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  color: aqua;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 2px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgb(255, 106, 0);
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 20px 20px 20px 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.input-box input:hover{
+  border: 2px solid aqua;
+}
+.input-box input::placeholder{
+  padding-left: 10px;
+ font-size: 17px;
+}
+.input-box i{
+  color: rgb(255, 106, 0);
+  position: absolute;
+  right: 475px;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.account-login .remember-me{
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  margin: -15px 0 15px;
+}
+.remember-me label input{
+  accent-color: #3333;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.remember-me a{
+  color: rgb(255, 106, 0);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+.remember-me a:hover{
+  text-decoration: underline;
+  color: aqua;
+}
+
+.account-login .btn{
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: 2px solid aqua;
+  outline: none;
+  border-radius: 50px;
+  font-size: 17px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.account-login .btn:hover{
+  border: none;
+background-color: rgb(255, 106, 0);
+}
+.account-login .register_link{
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 2px;
+}
+.register_link p a{
+  color: rgb(255, 106, 0);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.register_link p a:hover{
+  text-decoration: underline;
+  color: aqua;
+}
+form .social-icons{
+  padding-top: 40px;
+ text-align: center;
+}
+
+form .social-icons i{
+  color: rgb(255, 106, 0);
+  font-size: 30px;
+  letter-spacing: 10px;
+  transition: all 0.5s ease;
+}
+form .social-icons i:hover{
+  color: aqua;
+}
+/*RESPONSIVE*/
+@media (max-width: 800px) {
+  .account-login{
+    width: 445px;
+  }
+  .input-box i{
+    position: absolute;
+    right: 450px;
+  }
+  .input-box input{
+    height: 20px;
+  }
+}
